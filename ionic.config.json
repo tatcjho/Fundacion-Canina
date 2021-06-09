@@ -1,0 +1,7 @@
+{
+  "name": "app_fundacion_canes",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
