@@ -23,7 +23,11 @@ export class LoginPage implements OnInit {
       const user = await this.auth.login(email.value, password.value)
 
       if(user){
-        this.router.navigate(['/inicio']);
+        if(user.email == "admin@gmail.com"){
+          this.router.navigate(['/donaciones-total']);
+        }else{
+          this.router.navigate(['/inicio']);
+        }
       }else{
         this.isNotLogin()
         console.log("no es usuario")

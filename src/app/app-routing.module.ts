@@ -22,7 +22,8 @@ const routes: Routes = [
   {
     path: 'home',
     loadChildren: () => import('./shared/pages/home/home.module').then( m => m.HomePageModule)
-  },  {
+  },
+  {
     path: 'inicio',
     loadChildren: () => import('./shared/pages/inicio/inicio.module').then( m => m.InicioPageModule)
   },
@@ -45,6 +46,11 @@ const routes: Routes = [
   {
     path: 'donacion',
     loadChildren: () => import('./shared/pages/donacion/donacion.module').then( m => m.DonacionPageModule)
+
+  }
+  {
+    path: 'donaciones-total',
+    loadChildren: () => import('./shared/pages/donaciones-total/donaciones-total.module').then( m => m.DonacionesTotalPageModule)
   }
 
 
