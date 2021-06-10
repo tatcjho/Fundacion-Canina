@@ -1,0 +1,23 @@
+<ion-content>
+  <ion-grid>
+
+    <div class="ion-text-center" style="margin-top: 10vh;">
+      <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 35px;">Fundación Canina</h1>
+    </div>
+
+    <ion-row>
+      <!-- <ion-img style="width: 100%; height: auto; margin: 5vh; margin-bottom: 1vh !important;"
+        src="https://pbs.twimg.com/profile_images/516619110273122304/ILRVy9qy.png">
+      </ion-img> -->
+      <ion-col align-self-center style="margin-top: 3vh !important">
+        <ion-button [routerLink]="['/registration']" expand="block" color="primary">Registrarse</ion-button>
+        <br>
+        <div class="ion-text-center">
+          <span class="already">¿Ya eres usuario?</span>
+        </div>
+
+        <ion-button [routerLink]="['/login']" expand="block" color="danger">Iniciar Sesión</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
