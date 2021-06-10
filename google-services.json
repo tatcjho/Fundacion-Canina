@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "618505935228",
+    "project_id": "appfundacion-247b8",
+    "storage_bucket": "appfundacion-247b8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:618505935228:android:c1084dd4e1d27918246cf9",
+        "android_client_info": {
+          "package_name": "com.appfundacion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "618505935228-un5jum6bf35dl4ohrtu4q15usbjg1in1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBx4abSe4Ot0_EMoFNQemqDtqn1pt8iigU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "618505935228-un5jum6bf35dl4ohrtu4q15usbjg1in1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

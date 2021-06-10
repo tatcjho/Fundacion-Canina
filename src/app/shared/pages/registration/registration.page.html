@@ -10,29 +10,29 @@
 <ion-content>
   <ion-card style="margin-top: 2vh;">
     <form style="margin: 3vh !important;">
-      <ion-item lines="full">
+      <!-- <ion-item lines="full">
         <ion-label position="floating">Nombre</ion-label>
-        <ion-input type="text" required></ion-input>
-      </ion-item>
+        <ion-input id="input1" name="input1" required [(ngModel)]="user.user_name"></ion-input>
+      </ion-item> -->
 
-      <ion-item lines="full">
+      <!-- <ion-item lines="full">
         <ion-label position="floating">Apellido</ion-label>
         <ion-input type="text" required></ion-input>
-      </ion-item>
+      </ion-item> -->
 
       <ion-item lines="full">
         <ion-label position="floating">Correo</ion-label>
-        <ion-input type="text" required></ion-input>
+        <ion-input id="input2" name="input2" required #email></ion-input>
       </ion-item>
 
       <ion-item lines="full">
         <ion-label position="floating">Contraseña</ion-label>
-        <ion-input type="password" required></ion-input>
+        <ion-input id="input3" name="input3" type="password" #password></ion-input>
       </ion-item>
 
       <ion-row>
         <ion-col>
-          <ion-button type="submit" color="danger" expand="block">Registrarse</ion-button>
+          <ion-button type="submit" color="danger" expand="block" (click)="onRegister(email,password)">Registrarse</ion-button>
         </ion-col>
       </ion-row>
     </form>

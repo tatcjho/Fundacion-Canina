@@ -1,0 +1,28 @@
+ion-content{
+  --background: none;
+  background-image: url("../../../../assets/img/fondo3.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ion-row {
+  height: auto;
+}
+
+ion-col {
+  margin: 5vh !important;
+}
+
+ion-button {
+  font-weight: 500;
+}
+
+// @media (min-width: 240px) and (max-width: 768px) {
+//     ion-grid {
+//         background: $white-color;
+//     }
+//     ion-col {
+//         border: none;
+//     }
+// }

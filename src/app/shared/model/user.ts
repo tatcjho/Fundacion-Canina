@@ -1,8 +1,8 @@
 export class User {
-  uid: string;
-  nombre: string;
-  apellido: string;
-  direccion: number;
-  telefono: string;
-  donacion: number;
+uid:string;
+email:string;
+//propiedad de google
+displayName: string;
+//email verificado
+emailVerified:boolean;
 }

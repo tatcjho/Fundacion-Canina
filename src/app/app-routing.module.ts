@@ -22,7 +22,23 @@ const routes: Routes = [
   {
     path: 'home',
     loadChildren: () => import('./shared/pages/home/home.module').then( m => m.HomePageModule)
+  },  {
+    path: 'inicio',
+    loadChildren: () => import('./shared/pages/inicio/inicio.module').then( m => m.InicioPageModule)
+  },
+  {
+    path: 'quienes-somos',
+    loadChildren: () => import('./shared/pages/quienes-somos/quienes-somos.module').then( m => m.QuienesSomosPageModule)
+  },
+  {
+    path: 'como-ayudar',
+    loadChildren: () => import('./shared/pages/como-ayudar/como-ayudar.module').then( m => m.ComoAyudarPageModule)
+  },
+  {
+    path: 'contactos',
+    loadChildren: () => import('./shared/pages/contactos/contactos.module').then( m => m.ContactosPageModule)
   }
+
 
 ];
 
