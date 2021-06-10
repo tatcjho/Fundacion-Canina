@@ -37,6 +37,14 @@ const routes: Routes = [
   {
     path: 'contactos',
     loadChildren: () => import('./shared/pages/contactos/contactos.module').then( m => m.ContactosPageModule)
+  },
+  {
+    path: 'administrador',
+    loadChildren: () => import('./shared/pages/administrador/administrador.module').then( m => m.AdministradorPageModule)
+  },
+  {
+    path: 'donacion',
+    loadChildren: () => import('./shared/pages/donacion/donacion.module').then( m => m.DonacionPageModule)
   }
 
 
