@@ -1,4 +1,7 @@
+import { donativo } from './../../model/donativo';
 import { Component, OnInit } from '@angular/core';
+import { DonativoService } from '../../services/donativo.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-donaciones-total',
@@ -7,9 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DonacionesTotalPage implements OnInit {
 
-  constructor() { }
+  prod: Observable<any[]>;
 
-  ngOnInit() {
+  constructor(private donativoService: DonativoService) { }
+
+  async ngOnInit() {
+   this.prod = this.donativoService.getProductos();
   }
+
+
 
 }

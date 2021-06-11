@@ -18,18 +18,18 @@
       </ion-item> -->
 
       <ion-item lines="full">
-        <ion-label position="floating">Correo</ion-label>
-        <ion-input id="donativo_name" name="donativo_name" required #email></ion-input>
+        <ion-label position="floating">Descripcion</ion-label>
+        <ion-input id="input2" name="input2" [(ngModel)]="product.donativo_name"></ion-input>
       </ion-item>
 
       <ion-item lines="full">
-        <ion-label [(ngModel)]="product.donativo_cantidad" position="floating">Contraseña</ion-label>
-        <ion-input id="donativo_cantidad" name="donativo_cantidad"></ion-input>
+        <ion-label position="floating">Cantidad</ion-label>
+        <ion-input id="input3" name="input3" [(ngModel)]="product.donativo_cantidad"></ion-input>
       </ion-item>
 
       <ion-row>
         <ion-col>
-          <ion-button type="submit" color="danger" expand="block" (click)="newProduct()">Registrarse</ion-button>
+          <ion-button type="submit" color="danger" expand="block" (click)="addProduct(product)">Donar</ion-button>
         </ion-col>
       </ion-row>
     </form>

@@ -48,6 +48,7 @@ const routes: Routes = [
     loadChildren: () => import('./shared/pages/donacion/donacion.module').then( m => m.DonacionPageModule)
 
   }
+  ,
   {
     path: 'donaciones-total',
     loadChildren: () => import('./shared/pages/donaciones-total/donaciones-total.module').then( m => m.DonacionesTotalPageModule)
