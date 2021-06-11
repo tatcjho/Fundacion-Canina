@@ -1,6 +1,7 @@
 import { donativo } from './../../model/donativo';
 import { Component, OnInit } from '@angular/core';
 import { DonativoService } from '../../services/donativo.service';
+import { ProductService } from '../../services/product/product.service';
 
 @Component({
   selector: 'app-donacion',
@@ -9,7 +10,7 @@ import { DonativoService } from '../../services/donativo.service';
 })
 export class DonacionPage implements OnInit {
   public product: donativo;
-  constructor(private donativoService: DonativoService) { }
+  constructor(private donativoService: ProductService) { }
 
   ngOnInit() {
     this.newProduct()
@@ -21,21 +22,16 @@ export class DonacionPage implements OnInit {
       donativo_id: id.toString(),
       donativo_name: "",
       donativo_cantidad: "",
-      donativo_animal: null,
+      //donativo_animal: null,
     };
 
   }
-  add()
-  {
-    this.addProduct(this.product);
-  }
-  addProduct(product: donativo){
-    // this.newProduct();
-    this.donativoService.createProduct(product).then(() => {
-      console.log("entroooo");
+  public addProduct(d: donativo) {
+      this.donativoService.saveDonativo(d).then(() => {
+       console.log("donacion guardada")
 
-      this.product = {};
-    });
+      })
+
   }
 
 
