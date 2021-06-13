@@ -11,7 +11,7 @@ export class AppComponent {
     { title: 'Home', url: '/inicio', icon: 'home' },
     { title: 'Quiénes Somos', url: '/quienes-somos', icon: 'happy' },
     { title: '¿Cómo ayudar?', url: '/como-ayudar', icon: 'information' },
-    { title: 'Alianzas', url: '/folder/alianzas', icon: 'heart' },
+    { title: 'Alianzas', url: '/donacion', icon: 'heart' },
     { title: 'Contáctanos', url: '/contactos', icon: 'flash' },
 
   ];

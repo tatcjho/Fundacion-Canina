@@ -21,7 +21,8 @@ export class DonacionPage implements OnInit {
       donativo_id: id.toString(),
       donativo_name: "",
       donativo_cantidad: "",
-      donativo_animal: null,
+      donativo_cedula: "",
+      donativo_donante:"",
     };
 
   }

@@ -7,15 +7,16 @@
 <ion-content>
   <ion-card style="margin-top: 2vh;">
     <form style="margin: 3vh !important;">
-      <!-- <ion-item lines="full">
-        <ion-label position="floating">Nombre</ion-label>
-        <ion-input id="input1" name="input1" required [(ngModel)]="user.user_name"></ion-input>
-      </ion-item> -->
 
-      <!-- <ion-item lines="full">
-        <ion-label position="floating">Apellido</ion-label>
-        <ion-input type="text" required></ion-input>
-      </ion-item> -->
+      <ion-item lines="full">
+        <ion-label position="floating">Nombre del donante</ion-label>
+        <ion-input id="input1" name="input1" [(ngModel)]="product.donativo_donante"></ion-input>
+      </ion-item>
+
+      <ion-item lines="full">
+        <ion-label position="floating">Cedula del donante</ion-label>
+        <ion-input id="input2" name="input2" [(ngModel)]="product.donativo_cedula"></ion-input>
+      </ion-item>
 
       <ion-item lines="full">
         <ion-label position="floating">Descripcion</ion-label>
