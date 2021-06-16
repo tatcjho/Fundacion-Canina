@@ -1,13 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { MenuController } from '@ionic/angular';
-import { UserService } from './shared/services/user-service/user.service';
+import { UserService } from '../../services/user-service/user.service';
+
 @Component({
-  selector: 'app-root',
-  templateUrl: 'app.component.html',
-  styleUrls: ['app.component.scss'],
+  selector: 'app-menu',
+  templateUrl: './menu.page.html',
+  styleUrls: ['./menu.page.scss'],
 })
-export class AppComponent {
+export class MenuPage implements OnInit {
+
+
   public appPages = [
     { title: 'Home', url: '/inicio', icon: 'home' },
     { title: 'Quiénes Somos', url: '/quienes-somos', icon: 'happy' },
@@ -17,14 +19,10 @@ export class AppComponent {
 
   ];
 
-  constructor(public auth: UserService, public router:Router, public menu: MenuController) {}
+  constructor(public auth: UserService, public router:Router,) { }
 
-ngOnInit(){
-  //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
-  //Add 'implements OnInit' to the class.
-  this.menu.enable(false);
-
-}
+  ngOnInit() {
+  }
 
   async logOut(){
 
@@ -32,13 +30,11 @@ ngOnInit(){
       const user = await this.auth.logout()
       this.router.navigate(['/home']);
      console.log("Cerrando sesion..");
-     this.menu.enable(false);
     }catch(e){
       console.log(e);
 
     }
 
   }
-
 
 }
