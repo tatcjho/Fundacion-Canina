@@ -1,17 +1,23 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Donaciones registradas</ion-title>
+      <ion-title>Donaciones </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-grid>
+<ion-content fullscreen>
+  <ion-list>
+      <ion-list-header>
+          Donaciones
+      </ion-list-header>
+      <ion-item *ngFor="let producto of prod |async; ">
 
-    <div class="ion-text-center" style="margin-top: 10vh;">
-      <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 35px;">Donaciones registradas</h1>
-    </div>
+          <ion-label>
+              <h3 style="color: rgb(26, 236, 71)"> Total:  ${{producto.donativo_cantidad}}</h3>
+              <p style="color: rgb(26, 236, 71)">Descripcion: {{producto.donativo_name}}</p>
 
 
+          </ion-label>
 
-  </ion-grid>
+      </ion-item>
+  </ion-list>
 </ion-content>

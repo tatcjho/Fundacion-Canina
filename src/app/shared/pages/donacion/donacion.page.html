@@ -7,29 +7,34 @@
 <ion-content>
   <ion-card style="margin-top: 2vh;">
     <form style="margin: 3vh !important;">
-      <!-- <ion-item lines="full">
-        <ion-label position="floating">Nombre</ion-label>
-        <ion-input id="input1" name="input1" required [(ngModel)]="user.user_name"></ion-input>
-      </ion-item> -->
-
-      <!-- <ion-item lines="full">
-        <ion-label position="floating">Apellido</ion-label>
-        <ion-input type="text" required></ion-input>
-      </ion-item> -->
 
       <ion-item lines="full">
-        <ion-label position="floating">Correo</ion-label>
-        <ion-input id="donativo_name" name="donativo_name" required #email></ion-input>
+        <ion-label position="floating">Nombre del donante</ion-label>
+        <ion-input id="input1" name="input1" [(ngModel)]="product.donativo_donante"></ion-input>
       </ion-item>
 
       <ion-item lines="full">
-        <ion-label [(ngModel)]="product.donativo_cantidad" position="floating">Contraseña</ion-label>
-        <ion-input id="donativo_cantidad" name="donativo_cantidad"></ion-input>
+        <ion-label position="floating">Cedula del donante</ion-label>
+        <ion-input id="input2" name="input2" [(ngModel)]="product.donativo_cedula"></ion-input>
+      </ion-item>
+
+      <ion-item lines="full">
+        <ion-label position="floating">Descripcion</ion-label>
+        <ion-input id="input2" name="input2" [(ngModel)]="product.donativo_name"></ion-input>
+      </ion-item>
+
+      <ion-item lines="full">
+        <ion-label position="floating">Cantidad</ion-label>
+        <ion-input id="input3" name="input3" [(ngModel)]="product.donativo_cantidad"></ion-input>
       </ion-item>
 
       <ion-row>
         <ion-col>
+<<<<<<< HEAD
           <ion-button type="submit" color="danger" expand="block" (click)="addProduct(product)">Registrarse</ion-button>
+=======
+          <ion-button type="submit" color="danger" expand="block" (click)="addProduct(product)">Donar</ion-button>
+>>>>>>> 2e4293ca3c60fa9f85b5ec45cda5e37fc4be7156
         </ion-col>
       </ion-row>
     </form>
